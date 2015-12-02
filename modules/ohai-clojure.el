@@ -35,6 +35,11 @@
 ;; We might need Paredit too if that's how you like it.
 (package-require 'paredit)
 
+;; Switch on paredit when cider repl starts
+(add-hook
+ 'cider-repl-mode-hook
+ #'paredit-mode)
+
 ;; Setup
 (add-hook
  'clojure-mode-hook

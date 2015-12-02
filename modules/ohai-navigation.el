@@ -46,9 +46,9 @@
 (global-subword-mode 1)
 
 ;; Enhance C-x o when more than two windows are open.
-(package-require 'ace-window)
-(global-set-key (kbd "C-x o") 'ace-window)
-(global-set-key (kbd "C-x C-o") 'ace-swap-window)
+;;(package-require 'ace-window)
+;;(global-set-key (kbd "C-x o") 'ace-window)
+;;(global-set-key (kbd "C-x C-o") 'ace-swap-window)
 
 ;; Use C-x M-p to kill the buffer in the other window, revealing
 ;; the next buffer in the stack.
