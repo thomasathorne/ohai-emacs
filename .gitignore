@@ -17,3 +17,5 @@
 /session.*
 /network-security.data
 projectile.cache
+/#recentf#
+/modules/custom.el
