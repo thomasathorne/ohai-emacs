@@ -57,13 +57,14 @@
   ;; This is very much a matter of taste, feel free to disable it. Or better yet,
   ;; if you're into that sort of thing, see https://wiki.haskell.org/Unicode-symbols
   ;; for native Unicode support.
-  (with-eval-after-load "haskell-mode"
-    (ohai/font-lock-replace-symbol 'haskell-mode "\\(->\\)" "→")
-    (ohai/font-lock-replace-symbol 'haskell-mode "\\(<-\\)" "←")
-    (ohai/font-lock-replace-symbol 'haskell-mode "\\(=>\\)" "⇒")
-    (define-key haskell-mode-map (kbd "→") (lambda () (interactive) (insert "->")))
-    (define-key haskell-mode-map (kbd "←") (lambda () (interactive) (insert "<-")))
-    (define-key haskell-mode-map (kbd "⇒") (lambda () (interactive) (insert "=>")))))
+  ;; (with-eval-after-load "haskell-mode"
+  ;;   (ohai/font-lock-replace-symbol 'haskell-mode "\\(->\\)" "→")
+  ;;   (ohai/font-lock-replace-symbol 'haskell-mode "\\(<-\\)" "←")
+  ;;   (ohai/font-lock-replace-symbol 'haskell-mode "\\(=>\\)" "⇒")
+  ;;   (define-key haskell-mode-map (kbd "→") (lambda () (interactive) (insert "->")))
+  ;;   (define-key haskell-mode-map (kbd "←") (lambda () (interactive) (insert "<-")))
+  ;;   (define-key haskell-mode-map (kbd "⇒") (lambda () (interactive) (insert "=>"))))
+  )
 
 
 ;; A function for launching a compile buffer with `cabal test'.
